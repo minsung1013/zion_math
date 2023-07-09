@@ -34,7 +34,8 @@ with st.expander(mon):
         answers.append(form.text_input(problems[i]))
 
         if answers[i] == corrects[i]:
-            form.write('good job')
+            form.subheader('good job')
+            st.snow()
         else:
             form.write('sorry, try again')
 
@@ -54,7 +55,8 @@ with st.expander(tue):
         answers_tue.append(form.text_input(problems_tue[i]))
 
         if answers_tue[i] == corrects_tue[i]:
-            form.write('good job')
+            form.subheader('good job')
+            st.snow()
         else:
             form.write('sorry, try again')
 
@@ -74,7 +76,8 @@ with st.expander(wed):
         answers_wed.append(form.text_input(problems_wed[i]))
 
         if answers_wed[i] == corrects_wed[i]:
-            form.write('good job')
+            form.subheader('good job')
+            st.snow()
         else:
             form.write('sorry, try again')
 
@@ -94,7 +97,8 @@ with st.expander(thu):
         answers_thu.append(form.text_input(problems_thu[i]))
 
         if answers_thu[i] == corrects_thu[i]:
-            form.write('good job')
+            form.subheader('good job')
+            st.snow()
         else:
             form.write('sorry, try again')
 
@@ -113,7 +117,8 @@ with st.expander(fri):
         answers_fri.append(form.text_input(problems_fri[i]))
 
         if answers_fri[i] == corrects_fri[i]:
-            form.write('good job')
+            form.subheader('good job')
+            st.snow()
         else:
             form.write('sorry, try again')
 
