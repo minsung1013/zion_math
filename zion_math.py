@@ -2,26 +2,25 @@ import streamlit as st
 
 st.title('최상위 수학 6-2')
 
-mon = '월요일 PAGE 46-48'
-corrects = ['9.6', '4.5', '5', '0.5', '3', '5', '6', '400', '1', '1', '399', '399', '798', '798', '106']
-problems = ['7-1', '7-2', '7-3 (봉지)', '7-3(kg)', '8-1', '8-2', '8-3', '심화9_1', '심화9_2', '심화9_3', '심화9_4', '심화9_5',
-            '심화9_6', '심화9_7', '9-1']
+mon = '월요일 PAGE 66-68'
+corrects = ['나가다마라', '다가라', '4', '다라', '나다라']
+problems = ['1-1: 순서대로 예:가나다라마','2-1: 예: 가나다','2-2','3-1: 예 가나','3-2: 예 가나다']
 
-tue = '화요일_PAGE 49-51 Level up test'
-corrects_tue = ['1.84', '6', '100', '10:15', '2.98', '06:12', '6.5', '28', '1020']
-problems_tue = ['1', '2', '3', '4: 예) 12시40분 = 12:40', '5', '6: 예 3분 25초 = 03:25', '7', '8', '9']
+tue = '화요일_PAGE 69-71'
+corrects_tue = ['10','16','125','12']
+problems_tue = ['5-1','5-2','6-1','6-2']
 
-wed = '수요일_PAGE 52-54 Level up test-High Level'
-corrects_wed = ['90','15','2.5','21.47','0.88','0.5','90576','6','6']
-problems_wed = ['10','11','12','13','14','15','1 high level','2 high level','3 high level']
+wed = '수요일_PAGE 72-74'
+corrects_wed = ['2','5','34','168','다','2']
+problems_wed = ['7-1','7-2','8-1','8-2','심화9 답만 예: 가', '9-1']
 
-thu = "목요일_PAGE 55-56 High Level"
-corrects_thu = ['1.49','1.08','2.7','18.75','25','18']
-problems_thu = ['4','5','6','7','8','9']
+thu = "목요일_PAGE 75-77"
+corrects_thu = ['3','2','43','6','ㄷㄹㅁ', '1,4', '2']
+problems_thu = ['3','4','5','6','7 예: ㄱㄴㄷ','8예: 1,2','9']
 
-fri = "금요일_PAGE 60-65 공간과 입체"
-corrects_fri = ['라','가','다','다','8','라','가,다','다','8','10','나,다','4' ]
-problems_fri = ['1-1-(1)','1-1-(2)','1-2','1-3','1-4','1-5','2-1: 예) 가,나','2-2','2-5','2-6','3-3: 예) 가,나','3-4']
+fri = "금요일_PAGE 78-80"
+corrects_fri = ['18','6','54','8','7','72','10','다라','3']
+problems_fri = ['10','11','12','13','14','16','1','2: 예 가나','3']
 
 
 with st.expander(mon):
@@ -35,7 +34,6 @@ with st.expander(mon):
 
         if answers[i] == corrects[i]:
             form.subheader('good job')
-            st.snow()
         else:
             form.write('sorry, try again')
 
@@ -56,7 +54,6 @@ with st.expander(tue):
 
         if answers_tue[i] == corrects_tue[i]:
             form.subheader('good job')
-            st.snow()
         else:
             form.write('sorry, try again')
 
@@ -77,7 +74,6 @@ with st.expander(wed):
 
         if answers_wed[i] == corrects_wed[i]:
             form.subheader('good job')
-            st.snow()
         else:
             form.write('sorry, try again')
 
@@ -98,7 +94,6 @@ with st.expander(thu):
 
         if answers_thu[i] == corrects_thu[i]:
             form.subheader('good job')
-            st.snow()
         else:
             form.write('sorry, try again')
 
@@ -118,7 +113,6 @@ with st.expander(fri):
 
         if answers_fri[i] == corrects_fri[i]:
             form.subheader('good job')
-            st.snow()
         else:
             form.write('sorry, try again')
 
